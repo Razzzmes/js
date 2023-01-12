@@ -1,17 +1,17 @@
-const month = 11
-const year = 2020
+const month = 0
+const year = 0
 
 function season (month){
-    if(month >= 1 && month <= 3){
+    if(month >= 1 && month <= 2 || month == 12){
         console.log('зима')
     }
-    else if(month >= 4 && month <= 6){
+    else if(month >= 3 && month <= 5){
         console.log('весна')
     }
-    else if(month >= 7 && month <= 9){
+    else if(month >= 6 && month <= 8){
         console.log('лето')
     }
-    else if(month >= 10 && month <= 12){
+    else if(month >= 9 && month <= 11){
         console.log('осень')
     }
 
@@ -29,5 +29,5 @@ function leapyear (year){
     return year
 }
 
-console.log(season(month))
-console.log(leapyear(year))
+console.log(season(6))
+console.log(leapyear(2020))
