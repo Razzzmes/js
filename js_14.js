@@ -1,5 +1,4 @@
 class MyString{
-
     constructor(str){
         this.str = str;
     }
